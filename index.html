@@ -9,7 +9,10 @@
     <meta name="description" content="">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Tony Tahmouch">
     <meta http-equiv="cleartype" content="on">
     <meta name="author" content="Tony Tahmouch">
 
@@ -23,99 +26,8 @@
     <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#222222">
 
-
-    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
-    <!--
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="">
-    -->
-
-    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-    <!--
-    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-    -->
-
-    <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            padding-top: 20px;
-            padding-bottom: 60px;
-        }
-
-            /* Custom container */
-        .container {
-            margin: 0 auto;
-            max-width: 480px;
-        }
-
-        .container > hr {
-            margin: 60px 0;
-        }
-
-            /* Main marketing message and sign up button */
-        .jumbotron {
-            margin: 80px 0;
-            text-align: center;
-        }
-
-        .jumbotron h1 {
-            font-size: 100px;
-            line-height: 1;
-        }
-
-        .jumbotron .lead {
-            font-size: 24px;
-            line-height: 1.25;
-        }
-
-        .jumbotron .btn {
-            font-size: 21px;
-            padding: 14px 24px;
-        }
-
-            /* Supporting marketing content */
-        .marketing {
-            margin: 60px 0;
-        }
-
-        .marketing p + h4 {
-            margin-top: 28px;
-        }
-
-            /* Customize the navbar links to be fill the entire space of the .navbar */
-        .navbar .navbar-inner {
-            padding: 0;
-        }
-
-        .navbar .nav {
-            margin: 0;
-        }
-
-        .navbar .nav li {
-            display: table-cell;
-            width: 1%;
-            float: none;
-        }
-
-        .navbar .nav li a {
-            font-weight: bold;
-            text-align: center;
-            border-left: 1px solid rgba(255, 255, 255, .75);
-            border-right: 1px solid rgba(0, 0, 0, .1);
-        }
-
-        .navbar .nav li:first-child a {
-            border-left: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .navbar .nav li:last-child a {
-            border-right: 0;
-            border-radius: 0 3px 3px 0;
-        }
-    </style>
+    <link href="css/resume.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -127,41 +39,43 @@
 <div class="container">
 
     <div class="masthead">
-        <h3 class="muted">Tony Tahmouch</h3>
-
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="index.html">Resume</a></li>
+                        <li><a href="index.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- /.navbar -->
     </div>
 
-    <!-- Jumbotron -->
     <div class="jumbotron">
-        <h1>Market Myself!</h1>
+        <h1>Hi.</h1>
 
-        <p class="lead">Write some cool stuff in English, not Latin. Unless that's your thing.</p>
+        <h1>I'm Tony Tahmouch.</h1>
+
+        <h1>I'm a Mobile App Engineer.</h1>
+
+        <h1>Take a look around.</h1>
+
+        <img src="img/me.jpg" class="img-polaroid">
     </div>
 
     <hr>
 
-    <!-- Example row of columns -->
     <div class="row-fluid">
         <div class="span12">
-            <h2>Heading</h2>
+            <p class="lead">Social Life</p>
 
-            <p>Write some cool stuff in English, not Latin. Unless that's your thing.</p>
-
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+            <p>
+                <a class="button-facebook" href="http://www.facebook.com/tony.tahmouch">Facebook</a>
+                <a class="button-linkedin" href="http://www.linkedin.com/pub/tony-tahmouch/a/108/b85">LinkedIn</a>
+                <a class="button-twitter" href="https://twitter.com/ttahmouch">Twitter</a>
+            </p>
         </div>
     </div>
 
@@ -172,11 +86,7 @@
     </div>
 
 </div>
-<!-- /container -->
 
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap-transition.js"></script>
 <script src="js/bootstrap-alert.js"></script>
@@ -191,7 +101,6 @@
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     var _gaq = [
         ["_setAccount", "UA-XXXXX-X"],
