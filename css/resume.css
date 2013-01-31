@@ -12,7 +12,7 @@
 }
 
 .card {
-    margin: 1em;
+    margin: 2em;
     float: left;
 }
 
@@ -23,19 +23,21 @@
     display: block;
     margin: auto;
     height: auto;
+    min-height: 250px;
     width: 250px;
     padding: 1em;
 }
 
 .card h1 {
-    font-size: 24px;
+    font-size: 1.25em;
     color: rgb(109, 111, 114);
 }
 
 .card p {
     color: rgb(109, 111, 114);
-    font-size: 16px;
+    font-size: 1em;
     margin-bottom: -5px;
+    word-wrap: break-word;
 }
 
 .card .profile {
@@ -43,6 +45,15 @@
     max-height: 4em;
     float: left;
     margin-right: 10px;
+}
+
+.card a {
+    text-decoration: none !important;
+}
+
+.card .app {
+    height: 100px;
+    width: 100px;
 }
 
 .card div:hover, .card div:focus {
