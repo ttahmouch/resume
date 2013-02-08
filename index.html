@@ -54,25 +54,6 @@
         </div>
     </div>
 
-    <div>
-        <ul class="cards">
-            <li class="card">
-                <div class="card-body navbar-inner">
-                    <div class="card-header">
-                        <img class="profile img-circle" src="img/me.jpg">
-
-                        <h1 class="lead"><strong>Hi.</strong></h1>
-                    </div>
-
-                    <div class="card-footer">
-                        <p class="lead">My name is Tony Tahmouch. I'm a Mobile App Engineer. Thanks for stopping by.
-                            Feel free to take a look around.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
     <hr>
 
     <div class="row-fluid">
@@ -109,17 +90,22 @@
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
 
-<script>
-    var _gaq = [
-        ["_setAccount", "UA-XXXXX-X"],
-        ["_trackPageview"]
-    ];
-    (function (d, t) {
-        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        g.async = 1;
-        g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
-        s.parentNode.insertBefore(g, s)
-    }(document, "script"));
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38343009-1']);
+    _gaq.push(['_setDomainName', 'tahmouch.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
 </script>
 </body>
 </html>
