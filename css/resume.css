@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+/*#columns {*/
+    /*-moz-column-count: 3;*/
+    /*-moz-column-gap: 10px;*/
+    /*-moz-column-fill: auto;*/
+    /*-webkit-column-count: 3;*/
+    /*-webkit-column-gap: 10px;*/
+    /*-webkit-column-fill: auto;*/
+    /*column-count: 2;*/
+    /*column-gap: 15px;*/
+    /*column-fill: auto;*/
+/*}*/
+
 .card, .cards {
     list-style: none;
 }
@@ -12,48 +24,70 @@
 }
 
 .card {
-    margin: 2em;
     float: left;
+    margin: 2em;
 }
 
-.card div {
+.card .card-body {
     text-decoration: none;
     color: rgb(109, 111, 114);
     background: #F5F5F5;
     display: block;
     margin: auto;
     height: auto;
-    min-height: 250px;
-    width: 250px;
+    width: 225px;
     padding: 1em;
+    overflow: hidden;
 }
 
-.card h1 {
+.card-footer {
+    background-color: #0000ee;
+    overflow: hidden;
+    height: 75%;
+    text-align: justify;
+    padding-top: 1em;
+}
+
+.card-header {
+    background-color: #999113;
+    overflow: hidden;
+    width: inherit;
+    height: 25%;
+}
+
+.card .card-header h1 {
     font-size: 1.25em;
     color: rgb(109, 111, 114);
+    background-color: #a0522d;
+    float: right;
+    width: 65%;
+    height: inherit;
+    line-height: 1.5em;
+    text-align: center;
 }
 
-.card p {
+.card .card-header .profile {
+    max-width: 5em;
+    max-height: 5em;
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
+.card .card-footer p {
     color: rgb(109, 111, 114);
     font-size: 1em;
-    margin-bottom: -5px;
     word-wrap: break-word;
+    line-height: 1.5em;
 }
 
-.card .profile {
-    max-width: 4em;
-    max-height: 4em;
-    float: left;
-    margin-right: 10px;
-}
-
-.card a {
+.card .card-footer a {
     text-decoration: none !important;
 }
 
-.card .app {
-    height: 100px;
-    width: 100px;
+.card .card-footer .app {
+    height: 50px;
+    width: 50px;
 }
 
 .card div:hover, .card div:focus {
@@ -154,6 +188,6 @@ a.button-twitter:hover {
     border-radius: 0 3px 3px 0;
 }
 
-.actionBar {
+.action-bar {
     text-align: center;
 }
