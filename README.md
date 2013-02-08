@@ -12,5 +12,6 @@ Start concepting the resume using mobile-boilerplate and bootstrap. (Overkill?)
 Finally had time to finish everything.
 Added all semantic content including projects, homepage pictures, resume content, and contact information.
 May just need to check all my hyperlinks after it's hosted.
+I also need to link to projects from the resume page, set up my hostname for SMTP, and set up a blog.
 
 MMDDYY -
