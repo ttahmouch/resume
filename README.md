@@ -8,5 +8,9 @@ Initial Commit.
 Start templating the content in a plain-text editor.
 Start concepting the resume using mobile-boilerplate and bootstrap. (Overkill?)
 
-MMDDYY -
+020713 - 020813 -
+Finally had time to finish everything.
+Added all semantic content including projects, homepage pictures, resume content, and contact information.
+May just need to check all my hyperlinks after it's hosted.
 
+MMDDYY -
