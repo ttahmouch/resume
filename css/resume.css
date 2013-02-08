@@ -3,15 +3,6 @@
     padding: 0;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0));
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0));
-    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0));
-}
-
 body {
     background: url("../img/satinweave.png");
 }
@@ -31,7 +22,7 @@ body {
     -moz-column-fill: auto;
     column-count: 3;
     column-gap: 15px;
-    column-fill: auto;
+    column-fill: balance;
 }
 
 .pin {
@@ -65,6 +56,7 @@ body {
     font: 12px/18px Arial, sans-serif;
     color: #333;
     margin: 0;
+    text-align: justify;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -78,11 +70,23 @@ body {
         -moz-column-count: 2;
         column-count: 2;
     }
+
+    #columns.resume {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 480px) {
     #columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    #columns.resume {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
@@ -117,6 +121,12 @@ body {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
+    }
+
+    #columns.resume {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
 }
 
@@ -155,64 +165,6 @@ body {
     opacity: 0.4;
 }
 
-a.button-linkedin,
-a.button-facebook,
-a.button-twitter {
-    text-decoration: none !important;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: #FFFFFF;
-    font-size: 14px;
-    margin: 0 10px 10px 0;
-    padding: 10px 15px;
-    text-align: center;
-}
-
-a.button-linkedin {
-    background-color: #0073b2; /* fallback color */
-    background: -moz-linear-gradient(top, #009cda, #0073b2);
-    background: -webkit-linear-gradient(top, #009cda, #0073b2);
-    border: 1px solid #0073b2;
-    text-shadow: 0 -1px -1px #005486;
-}
-
-a.button-linkedin:hover {
-    background: -moz-linear-gradient(top, #0073b2, #009cda);
-    background: -ms-linear-gradient(top, #0073b2, #009cda);
-    background: -webkit-linear-gradient(top, #0073b2, #009cda);
-}
-
-a.button-facebook {
-    background-color: #2b4170; /* fallback color */
-    background: -moz-linear-gradient(top, #3b5998, #2b4170);
-    background: -ms-linear-gradient(top, #3b5998, #2b4170);
-    background: -webkit-linear-gradient(top, #3b5998, #2b4170);
-    border: 1px solid #2b4170;
-    text-shadow: 0 -1px -1px #1f2f52;
-}
-
-a.button-facebook:hover {
-    background: -moz-linear-gradient(top, #2b4170, #3b5998);
-    background: -ms-linear-gradient(top, #2b4170, #3b5998);
-    background: -webkit-linear-gradient(top, #2b4170, #3b5998);
-}
-
-a.button-twitter {
-    background-color: #0081ce; /* fallback color */
-    background: -moz-linear-gradient(top, #00aced, #0081ce);
-    background: -ms-linear-gradient(top, #00aced, #0081ce);
-    background: -webkit-linear-gradient(top, #00aced, #0081ce);
-    border: 1px solid #0081ce;
-    text-shadow: 0 -1px -1px #005ea3;
-}
-
-a.button-twitter:hover {
-    background: -moz-linear-gradient(top, #0081ce, #00aced);
-    background: -ms-linear-gradient(top, #0081ce, #00aced);
-    background: -webkit-linear-gradient(top, #0081ce, #00aced);
-}
-
 .navbar .navbar-inner {
     padding: 0;
     margin-top: 3em;
@@ -247,4 +199,20 @@ a.button-twitter:hover {
 
 .action-bar {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#columns.contact {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.github-fork-ribbon a {
+    text-decoration: none !important;;
+}
+
+.github-fork-ribbon a:hover {
+    color: #FFFFFF;
 }
