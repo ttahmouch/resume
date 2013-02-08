@@ -26,6 +26,10 @@
     <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#222222">
 
+    <link rel="stylesheet" href="css/gh-fork-ribbon.css"/>
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/gh-fork-ribbon.ie.css"/>
+    <![endif]-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
     <link href="css/resume.css" rel="stylesheet">
@@ -55,18 +59,35 @@
     </div>
 
     <div id="wrapper">
-        <div id="columns">
+        <div id="columns" class="contact">
             <div class="pin">
                 <h2 class="lead">Tony Tahmouch</h2>
 
                 <img src="img/staticmap.png">
 
                 <address>
-                    1628 Lafayette Blvd.<br>
-                    Lincoln Park, MI 48146<br>
-                    <abbr title="Phone">P:</abbr> (734) 846-0477<br>
-                    <abbr title="Email">E:</abbr> tony@tahmouch.com<br>
-                    <abbr title="Website">W:</abbr> blog.tahmouch.com
+                    <p class="lead">1628 Lafayette Blvd.</p>
+
+                    <p class="lead">Lincoln Park, MI 48146</p>
+
+                    <a href="tel:7348460477">
+                        <p class="lead">
+                            <abbr title="Phone">P:</abbr>
+                            (734) 846-0477
+                        </p>
+                    </a>
+
+                    <a href="mailto:tony@tahmouch.com?subject=Hello!">
+                        <p class="lead">
+                            <abbr title="Email">E:</abbr>
+                            tony@tahmouch.com
+                        </p>
+                    </a>
+
+                    <p class="lead">
+                        <abbr title="Website">W:</abbr>
+                        blog.tahmouch.com
+                    </p>
                 </address>
             </div>
         </div>
@@ -76,11 +97,17 @@
         <div class="span12">
             <p class="lead">Social Life</p>
 
-            <p class="action-bar">
-                <a class="button-facebook" href="http://www.facebook.com/tony.tahmouch">Facebook</a>
-                <a class="button-linkedin" href="http://www.linkedin.com/pub/tony-tahmouch/a/108/b85">LinkedIn</a>
-                <a class="button-twitter" href="https://twitter.com/ttahmouch">Twitter</a>
-            </p>
+            <div class="action-bar">
+                <a href="http://www.facebook.com/tony.tahmouch">
+                    <img src="img/facebook.png"/>
+                </a>
+                <a href="http://www.linkedin.com/pub/tony-tahmouch/a/108/b85">
+                    <img src="img/linkedin.png"/>
+                </a>
+                <a href="https://twitter.com/ttahmouch">
+                    <img src="img/twitter.png"/>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -88,6 +115,12 @@
         <p>&copy; Tony Tahmouch 2013</p>
     </div>
 
+</div>
+
+<div class="github-fork-ribbon-wrapper right-bottom">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/ttahmouch">Fork me on GitHub</a>
+    </div>
 </div>
 
 <script src="js/jquery.js"></script>
@@ -104,17 +137,22 @@
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
 
-<script>
-    var _gaq = [
-        ["_setAccount", "UA-XXXXX-X"],
-        ["_trackPageview"]
-    ];
-    (function (d, t) {
-        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        g.async = 1;
-        g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
-        s.parentNode.insertBefore(g, s)
-    }(document, "script"));
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38343009-1']);
+    _gaq.push(['_setDomainName', 'tahmouch.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
 </script>
 </body>
 </html>
