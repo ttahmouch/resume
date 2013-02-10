@@ -17,12 +17,15 @@ body {
     -webkit-column-count: 3;
     -webkit-column-gap: 10px;
     -webkit-column-fill: auto;
+    -webkit-column-width: 100%;
     -moz-column-count: 3;
     -moz-column-gap: 10px;
     -moz-column-fill: auto;
+    -moz-column-width: 100%;
     column-count: 3;
     column-gap: 15px;
-    column-fill: balance;
+    column-fill: auto;
+    column-width: 100%;
 }
 
 .pin {
@@ -38,7 +41,6 @@ body {
     padding-bottom: 5px;
     background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
     opacity: 1;
-
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
@@ -53,6 +55,7 @@ body {
 }
 
 .pin p {
+    width: 100%;
     font: 12px/18px Arial, sans-serif;
     color: #333;
     margin: 0;
@@ -76,6 +79,10 @@ body {
         -moz-column-count: 1;
         column-count: 1;
     }
+
+    .navbar .nav li {
+        font-size: small;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -90,6 +97,10 @@ body {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
+    }
+
+    .navbar .nav li {
+        font-size: x-small;
     }
 }
 
@@ -159,10 +170,6 @@ body {
 
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-}
-
-#columns:hover .pin:not(:hover) {
-    opacity: 0.4;
 }
 
 .navbar .navbar-inner {
