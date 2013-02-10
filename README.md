@@ -14,4 +14,9 @@ Added all semantic content including projects, homepage pictures, resume content
 May just need to check all my hyperlinks after it's hosted.
 I also need to link to projects from the resume page, set up my hostname for SMTP, and set up a blog.
 
+021013 -
+Minor Touch-ups.
+Replaces the contact information until everything is finalized with DNS propagation.
+Need to add more information into my projects section regarding what I actually built during the project timelines.
+
 MMDDYY -
