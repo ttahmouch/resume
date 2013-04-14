@@ -17,15 +17,15 @@ body {
     -webkit-column-count: 3;
     -webkit-column-gap: 10px;
     -webkit-column-fill: auto;
-    -webkit-column-width: 100%;
+    -webkit-column-width: auto;
     -moz-column-count: 3;
     -moz-column-gap: 10px;
     -moz-column-fill: auto;
-    -moz-column-width: 100%;
+    -moz-column-width: auto;
     column-count: 3;
-    column-gap: 15px;
+    column-gap: 10px;
     column-fill: auto;
-    column-width: 100%;
+    column-width: auto;
 }
 
 .pin {
@@ -41,10 +41,6 @@ body {
     padding-bottom: 5px;
     background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
     opacity: 1;
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
 }
 
 .pin img {
@@ -68,6 +64,21 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    #columns.resume {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .navbar .nav li {
+        font-size: x-small;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
